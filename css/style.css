@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+img {
+    size: 80%;
+    max-width: 80%;
+}
+
 /* Styles de base pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
