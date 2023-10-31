@@ -1,12 +1,20 @@
-main {
+main.cv {
   background-color: #FFF;
+  color: #000;
+  padding: 40px;
+  width: 70%;
 }
 
 body {
   color: #000;
 }
 
-h2 {
+h2.cv {
+  font-size: 35px;
+  text-align: center;
+}
+
+h3 {
   text-align: center;
 }
 
@@ -19,19 +27,7 @@ ul {
   list-style-type: none;
 }
 
-.année {
- color: #44898E;
-}
-
 a {
-  color: #44898E;
-}
-
-.soustitre {
-  padding-top: 20px;
-}
-
-.vert {
   color: #44898E;
 }
 
@@ -40,31 +36,70 @@ table {
   border-collapse: collapse;
 }
 
+.item {
+  padding-top: 10px;
+}
+
+.soustitre {
+  padding-top: 20px;
+}
+
+.année {
+  color: #44898E;
+ }
+
+.vert {
+  color: #44898E;
+}
+
 .colonneG {
-  width: 25%;
+  display: flexbox;
+  width: 22%;
+  background-color: #DBEEF4;
+  border-right: 1px solid #44898E;
 }
 
 .colonneD {
-  width: 50%;
+  display: flexbox;
+  position: relative;
+  padding: 20px;
 }
 
-table.competence {
-  width: 90%;
-}
-
-.titrecompetence {
-  text-align: center;
-  font-size: 25px;
+.competence {
+  margin-left: 4%;
+  width: 80%;
 }
 
 .titrecol {
+  margin-top: 1px;
+  padding: 5px;
+  background-color: #44898E;
+  color: #FFFFFF;
   text-align: center;
+  position:relative;
 }
 
 .titrecolcompetence{
   text-align: center;
+  font-weight: bold;
+}
+
+td.block {
+  padding-left: 10px;
+  border-top: 1px dotted  #44898E;
+  border-left: 1px solid  #44898E;
+}
+
+td.block2 {
+  padding-left: 10px;
+  border-top: 1px dotted  #44898E;
+}
+
+td#block3{
+  border-top: 7px solid #44898E ;
 }
 
 .photo {
+  margin-top: -30%;
   text-align: center;
 }

@@ -1,3 +1,14 @@
+/* Styles pour le pied de page */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
 /* Réinitialisation des styles de base */
 * {
     margin: 0;
@@ -33,14 +44,24 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
+a {
+    color: #fff;
+}
+
+nav ul li a{
     color: #fff;
     text-decoration: none;
+    margin: 2px auto;
+    padding: 10px;
+    background-color: #777;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Styles pour le contenu principal */
 main {
-    max-width: 80%;
+    color: #fff;
+    max-width: 70%;
     margin: 20px auto;
     padding: 20px;
     background-color: #333;
@@ -50,17 +71,6 @@ main {
 main h2 {
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-footer {
-    /* Your footer styles here */
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 /* rainbow */
@@ -119,13 +129,3 @@ h1:hover:before {
     opacity: 1;
     animation: animate 8s linear infinite;
 }
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
