@@ -1,0 +1,70 @@
+main {
+  background-color: #FFF;
+}
+
+body {
+  color: #000;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  border-top: 7px solid #44898E;
+  max-width: 95%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.année {
+ color: #44898E;
+}
+
+a {
+  color: #44898E;
+}
+
+.soustitre {
+  padding-top: 20px;
+}
+
+.vert {
+  color: #44898E;
+}
+
+table {
+  color: #000;
+  border-collapse: collapse;
+}
+
+.colonneG {
+  width: 25%;
+}
+
+.colonneD {
+  width: 50%;
+}
+
+table.competence {
+  width: 90%;
+}
+
+.titrecompetence {
+  text-align: center;
+  font-size: 25px;
+}
+
+.titrecol {
+  text-align: center;
+}
+
+.titrecolcompetence{
+  text-align: center;
+}
+
+.photo {
+  text-align: center;
+}

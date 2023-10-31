@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    color: #fff;
     box-sizing: border-box;
 }
 
@@ -41,7 +40,7 @@ nav ul li a {
 
 /* Styles pour le contenu principal */
 main {
-    max-width: 960px;
+    max-width: 80%;
     margin: 20px auto;
     padding: 20px;
     background-color: #333;
@@ -120,3 +119,13 @@ h1:hover:before {
     opacity: 1;
     animation: animate 8s linear infinite;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
