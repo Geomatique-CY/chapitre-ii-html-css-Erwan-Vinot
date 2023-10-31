@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/jeu.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <title>Contact - Erwan Vinot</title>
+        <title>Jeu - Erwan Vinot</title>
     </head>
     <body>
         <header>
-            <h1>Contact</h1>
+            <h1>Jeu (très dur !)</h1>
             <nav>
                 <ul>
                     <li>
@@ -21,29 +22,23 @@
                         <a href="services.html">Services</a>
                     </li>
                     <li>
-                        <a href="cv.html">CV</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                     <li>
-                        <a href="jeu.html">Jeu</a>
+                        <a href="cv.html">CV</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section>
-                <h2>Me contacter</h2>
-                <p>
-                    <a href="mailto:erwan.vinot@hautesaonenumerique.fr" target="_blank">erwan.vinot@hautesaonenumerique.fr</a>
-                    <!--Mail: souligné, lien mailto -->
-                    <br /> ☏ <a href="tel:+33384973716">
-                        <span>03 84 97 37 16 </a>     📱 </span>
-                    <a href="tel:+33767903729">
-                        <span></span>07 67 90 37 29 </span>
-                    </a>
-                    <br />
-                </p>
-            </section>
-        </main>
+        <form id="formulaire">
+          <input type="number" placeholder="Nombre 1 à 100" id="numberInput">
+          <input type="submit" value="Jouer" onclick="handleClick(event)"></br>
+          <span id="erreurnbvide"></span></br>
+          <span id="resultat"></span>
+          <img id="kot" src="" style="display:none;"></br>
+          <img id="party" src="" style="display:none;"></br>
+        </form>
+        <script src="js/script.js"></script>
         <footer>
             <p>&copy; 2023 Erwan Vinot</p>
         </footer>

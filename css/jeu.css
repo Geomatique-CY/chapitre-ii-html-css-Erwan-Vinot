@@ -1,0 +1,15 @@
+
+form {
+  color: darkgrey;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  z-index: -3 ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80.3vh;
+}
