@@ -19,25 +19,24 @@ footer {
  /* Ajout d'espace entre les sections */
  section {
     margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
  }
  
  /* Ajout d'espace entre les articles */
  article {
     margin-bottom: 20px;
- }
- 
- img {
-    max-width: 80%;
+    align-items: center;
+    justify-content: center;
  }
  
  /* Styles de base pour le corps de la page */
  body {
     font-family: Arial, sans-serif;
-    background-color: #333;
+    background-color: #444;
     line-height: 1.6;
  }
- 
- /* Styles pour l'en-tête fixe */
+
  /* Styles pour l'en-tête fixe */
  header {
     position: sticky;
@@ -76,7 +75,7 @@ footer {
     padding: 10px;
     background-color: #777;
     border-radius: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
  }
  
  /* Styles pour le contenu principal */
@@ -88,7 +87,7 @@ footer {
     padding: 20px;
     background-color: #333;
     border-radius: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
  }
  
  main h2 {
@@ -103,12 +102,12 @@ footer {
     padding: 10px;
     text-align: left;
     position: relative;
-    margin-right: 30px; /* Espacement entre les articles */
+    margin-right: 20px; /* Espacement entre les articles */
     margin-bottom: 20px; /* Espacement entre les lignes d'articles */
     border-radius: 30px;
     background-color: #555;
-    border: 1px solid #777;
-    cursor: pointer;
+    border-top: 2px solid #777;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
  }
  
  .article-content {
@@ -127,13 +126,14 @@ footer {
  
  .article-thumbnail img {
     max-width: 100%;
+    border-bottom: 2px solid #333;
     border-radius: 30px; /* Ajoute un arrondi aux miniatures */
     overflow: hidden; /* Masque tout contenu débordant de la miniature */
  }
  
  .article-title {
     flex-grow: 1; /* Laissez le titre occuper tout l'espace restant à droite de l'image */
-    padding-left: 10px; /* Espacement entre l'image et le titre */
+    padding: 10px; /* Espacement entre l'image et le titre */
  }
  
  /* Styles pour le titre arc-en-ciel */
