@@ -38,6 +38,7 @@ body {
 }
 
 /* Styles pour l'en-tête fixe */
+/* Styles pour l'en-tête fixe */
 header {
     position: sticky;
     top: 0;
@@ -45,9 +46,8 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    border-bottom: 1px solid #777; /* Ajout du style "solid" et de la couleur "#777" */
 }
-
-
 
 nav ul {
     list-style: none;
@@ -94,6 +94,48 @@ main {
 main h2 {
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+
+.article-box {
+    width: 47%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    margin-right: 30px; /* Espacement entre les articles */
+    margin-bottom: 20px; /* Espacement entre les lignes d'articles */
+    border-radius: 30px;
+    background-color: #555;
+    border: 1px solid #777;
+    cursor: pointer;
+
+}
+
+.article-content {
+    display: flex;
+    flex-direction: row; /* Alignement horizontal des éléments enfants */
+}
+
+.article-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-thumbnail {
+    width: 15%;
+}
+
+.article-thumbnail img {
+    max-width: 100%;
+    border-radius: 30px; /* Ajoute un arrondi aux miniatures */
+    overflow: hidden; /* Masque tout contenu débordant de la miniature */
+}
+
+.article-title {
+    flex-grow: 1; /* Laissez le titre occuper tout l'espace restant à droite de l'image */
+    padding-left: 10px; /* Espacement entre l'image et le titre */
 }
 
 /* Styles pour le titre arc-en-ciel */

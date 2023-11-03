@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal.css">
         <title>Accueil - Erwan Vinot</title>
     </head>
     <body>
@@ -30,22 +31,81 @@
             </nav>
         </header>
         <main>
-            <section>
-                <h2>Bienvenue</h2>
-            </section>
-            <section>
-                <h2>Mes créations :</h2>
-                <article>
-                    <h3>Carte des occurrences des Hêtres en France - Erwan VINOT 2023</h3>
-                    <p>Voici ma création la plus récente, une carte des occurrences des Hêtres en France, réalisée en 2023. Cette carte présente la répartition des Hêtres sur le territoire français.</p>
+            <h2>Mes créations :</h2>
+            <section class="article-section">
+                <article class="article-box" data-description="Voici ma création la plus récente, une carte des occurrences des Hêtres en France, réalisée en 2023. Cette carte présente la répartition des Hêtres sur le territoire français.">
+                    <div class="article-content">
+                        <div class="article-thumbnail">
+                            <img src="img/Hêtres.png">
+                        </div>
+                        <div class="article-title">
+                            <h3>Carte des occurrences des Hêtres en France - Erwan VINOT 2023</h3>
+                        </div>
+                    </div>
                 </article>
-            </section>
-            <section>
-                <img src="img/Hêtres.png">
+                <article class="article-box" data-description="Voici ma création la plus récente, une carte des occurrences des Hêtres en France, réalisée en 2023. Cette carte présente la répartition des Hêtres sur le territoire français.">
+                    <div class="article-content">
+                        <div class="article-thumbnail">
+                            <img src="img/Hêtres.png">
+                        </div>
+                        <div class="article-title">
+                            <h3>Carte des occurrences des Hêtres en France - Erwan VINOT 2023</h3>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-box" data-description="Voici ma création la plus récente, une carte des occurrences des Hêtres en France, réalisée en 2023. Cette carte présente la répartition des Hêtres sur le territoire français.">
+                    <div class="article-content">
+                        <div class="article-thumbnail">
+                            <img src="img/Hêtres.png">
+                        </div>
+                        <div class="article-title">
+                            <h3>Carte des occurrences des Hêtres en France - Erwan VINOT 2023</h3>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-box" data-description="Voici ma création la plus récente, une carte des occurrences des Hêtres en France, réalisée en 2023. Cette carte présente la répartition des Hêtres sur le territoire français.">
+                    <div class="article-content">
+                        <div class="article-thumbnail">
+                            <img src="img/Hêtres.png">
+                        </div>
+                        <div class="article-title">
+                            <h3>Carte des occurrences des Hêtres en France - Erwan VINOT 2023</h3>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-box" data-description="Voici ma création la plus récente, une carte des occurrences des Hêtres en France, réalisée en 2023. Cette carte présente la répartition des Hêtres sur le territoire français.">
+                    <div class="article-content">
+                        <div class="article-thumbnail">
+                            <img src="img/Hêtres.png">
+                        </div>
+                        <div class="article-title">
+                            <h3>Carte des occurrences des Hêtres en France - Erwan VINOT 2023</h3>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-box" data-description="Voici ma création la plus récente, une carte des occurrences des Hêtres en France, réalisée en 2023. Cette carte présente la répartition des Hêtres sur le territoire français.">
+                    <div class="article-content">
+                        <div class="article-thumbnail">
+                            <img src="img/Hêtres.png">
+                        </div>
+                        <div class="article-title">
+                            <h3>Carte des occurrences des Hêtres en France - Erwan VINOT 2023</h3>
+                        </div>
+                    </div>
+                </article>
             </section>
         </main>
         <footer>
             <p>&copy; Erwan Vinot - 2023 </p>
         </footer>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 id="modal-title">Titre de l'article</h3>
+                <img id="modal-image" src="" alt="Image en grand">
+                <div id="modal-description" class="modal-description"></div>
+            </div>
+        </div>
+        <script src="js/modal.js"></script> <!-- Lien vers votre fichier JavaScript -->
     </body>
 </html>
