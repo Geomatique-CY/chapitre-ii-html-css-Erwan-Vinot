@@ -9,9 +9,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-}
-
-.modal-content {
+ }
+ 
+ .modal-content {
     background-color: #333;
     margin: 10% auto;
     padding: 20px;
@@ -19,11 +19,12 @@
     width: 60%;
     color: #fff;
     border-radius: 30px;
-}
-
-.close {
+ }
+ 
+ .close {
     color: #fff;
     float: right;
     font-size: 30px;
     cursor: pointer;
-}
+ }
+ 
