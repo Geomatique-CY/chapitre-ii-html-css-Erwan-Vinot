@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Services SIG - Erwan Vinot</title>
+      <script src="//unpkg.com/three"></script>
+      <script src="//unpkg.com/three-spritetext"></script>    
+      <script src="//unpkg.com/3d-force-graph"></script>
+   </head>
+   <body>
+      <header>
+         <h1 class="rainbow">Mes Clients et mes Outils</h1>
+         <nav>
+            <ul>
+               <li>
+                  <a href="index.html">Accueil</a>
+               </li>
+               <li>
+                  <a href="a-propos.html">À propos</a>
+               </li>
+               <li>
+                  <a href="services.html">Services</a>
+               </li>
+               <li>
+                  <a href="contact.html">Contact</a>
+               </li>
+               <li>
+                  <a href="cv.html">CV</a>
+               </li>
+               <li>
+                  <a href="jeu.html">Jeu</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <div id="3d-graph"></div>
+
+         <script type="importmap">{ "imports": { "three": "//unpkg.com/three/build/three.module.js" }}</script>
+         <script type="module">
+           import { UnrealBloomPass } from '//unpkg.com/three/examples/jsm/postprocessing/UnrealBloomPass.js';
+       
+           const Graph = ForceGraph3D()
+             (document.getElementById('3d-graph'))
+               .backgroundColor('#020202')
+               .jsonUrl('data/clients_outils.json')
+               .nodeAutoColorBy('group')
+               .linkOpacity([0.01])
+               .width([2110])
+               .height([1030])
+               .showNavInfo(false)
+               .nodeThreeObject(node => {
+                  const sprite = new SpriteText(node.id);
+                  sprite.material.depthWrite = false; // make sprite background transparent
+                  sprite.color = node.color;
+                  sprite.textHeight = 8;
+                  return sprite;
+               });
+       
+           const bloomPass = new UnrealBloomPass();
+           bloomPass.strength = 2;
+           bloomPass.radius = 1;
+           bloomPass.threshold = 0.1;
+           Graph.postProcessingComposer().addPass(bloomPass);
+         </script>
+      </main>
+      <footer>
+         <p>&copy; Erwan Vinot - 2023 | <a href="https://github.com/vasturiano/3d-force-graph">3D Force-Directed Graph</a> par Vasco Asturiano</p>
+      </footer>
+   </body>
+</html>
