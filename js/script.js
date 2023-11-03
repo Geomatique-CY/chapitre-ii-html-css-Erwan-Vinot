@@ -1,5 +1,5 @@
   var nbrandom = Math.floor(Math.random() * 100) + 1;
-  var essais = 0;
+  var essais = 1;
   var img = document.getElementById("kot");
   var imgparty = document.getElementById("party");
 
@@ -31,7 +31,7 @@
             imgparty.style.display = "inline";
             result.innerHTML = "Trouvé ! c'était : " + nbrandom + " (trouvé en " + essais + " essais)";
             console.log("%cTrouvé ! c'était : " + nbrandom + "%ctrouvé en " + essais + "%cessais. Entrez un nombre pour une nouvelle partie.");
-            essais = 0;
+            essais = 1;
             nbrandom = Math.floor(Math.random() * 100) + 1;
         }
 
