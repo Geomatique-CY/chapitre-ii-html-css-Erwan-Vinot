@@ -35,12 +35,15 @@
             </ul>
          </nav>
       </header>
-      <main>
+      <main id="main3d">
          <div id="3d-graph"></div>
 
          <script type="importmap">{ "imports": { "three": "//unpkg.com/three/build/three.module.js" }}</script>
          <script type="module">
            import { UnrealBloomPass } from '//unpkg.com/three/examples/jsm/postprocessing/UnrealBloomPass.js';
+           var mainElement = document.getElementById("main3d");
+           var w = mainElement.offsetWidth*0.975;
+           var h = window.innerHeight*0.8;
        
            const Graph = ForceGraph3D()
              (document.getElementById('3d-graph'))
@@ -48,8 +51,8 @@
                .jsonUrl('data/clients_outils.json')
                .nodeAutoColorBy('group')
                .linkOpacity([0.01])
-               .width([1685])
-               .height([800])
+               .width([w])
+               .height([h])
                .showNavInfo(false)
                .nodeThreeObject(node => {
                   const sprite = new SpriteText(node.id);
