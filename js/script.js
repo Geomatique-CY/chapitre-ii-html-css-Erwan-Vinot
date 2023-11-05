@@ -30,7 +30,7 @@
             imgparty.src = "img/party.gif";
             imgparty.style.display = "inline";
             result.innerHTML = "Trouvé ! c'était : " + nbrandom + " (trouvé en " + essais + " essais)";
-            console.log("%cTrouvé ! c'était : " + nbrandom + "%ctrouvé en " + essais + "%cessais. Entrez un nombre pour une nouvelle partie.");
+            // console.log("%cTrouvé ! c'était : " + nbrandom + "%ctrouvé en " + essais + "%cessais. Entrez un nombre pour une nouvelle partie.");
             essais = 1;
             nbrandom = Math.floor(Math.random() * 100) + 1;
         }
@@ -39,7 +39,7 @@
             errorMessage.innerHTML = "";
             imgparty.style.display = "none";
             result.innerHTML = "Plus petit que : " + number;
-            console.log("%cPlus petit que : ", 'color: #bada55' + number);
+            // console.log("%cPlus petit que : ", 'color: #bada55' + number);
             essais++;
         }
 
@@ -47,7 +47,7 @@
             errorMessage.innerHTML = "";
             imgparty.style.display = "none";
             result.innerHTML = "Plus grand que : " + number;
-            console.log("%cPlus grand que : ", 'color: #bada55' + number);
+            // console.log("%cPlus grand que : ", 'color: #bada55' + number);
             essais++;
         }
     }
