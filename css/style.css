@@ -120,6 +120,11 @@ footer {
     flex-wrap: wrap;
  }
  
+#lol {
+   padding-right: 10%;
+   padding-left: 10%;
+}
+
  .article-thumbnail {
     width: 15%;
  }
