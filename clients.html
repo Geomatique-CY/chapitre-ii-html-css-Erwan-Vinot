@@ -37,7 +37,7 @@
       </header>
       <main id="main3d">
          <div id="3d-graph"></div>
-
+         <!-- voir https://github.com/vasturiano/3d-force-graph, inspiration : https://observablehq.com/@d3/force-directed-tree -->
          <script type="importmap">{ "imports": { "three": "//unpkg.com/three/build/three.module.js" }}</script>
          <script type="module">
            import { UnrealBloomPass } from '//unpkg.com/three/examples/jsm/postprocessing/UnrealBloomPass.js';
@@ -46,7 +46,8 @@
            var h = window.innerHeight*0.8;
        
            const Graph = ForceGraph3D()
-             (document.getElementById('3d-graph'))
+             (document.getElementById('3d-graph')) 
+            //  les paramètres vont ici
                .backgroundColor('#020202')
                .jsonUrl('data/clients_outils.json')
                .nodeAutoColorBy('group')
@@ -61,7 +62,7 @@
                   sprite.textHeight = 8;
                   return sprite;
                });
-       
+           //   effet lumineux
            const bloomPass = new UnrealBloomPass();
            bloomPass.strength = 2;
            bloomPass.radius = 1;
