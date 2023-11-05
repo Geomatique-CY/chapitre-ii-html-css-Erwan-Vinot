@@ -6,6 +6,10 @@ form {
   text-align: center;
 }
 
+#numberInput{
+  width: 10%;
+}
+
 input {
   padding: 5px;
   margin: 5px;
